@@ -85,7 +85,7 @@
     "CONFIRM_PASSWORD": "确认密码"
   },
   "FOOTER": {
-    "COPYRIGHT": "CBoard开源项目组",
+    "COPYRIGHT": "东为数据可视化",
     "VERSION": "版本"
   },
   "DASHBOARD": {
@@ -247,6 +247,7 @@
       "PARAM_NAME": "参数名称",
       "CUBE_TREE": "看板中的数据集/查询",
       "LINKED_COLUMN": "参数关联上的列",
+      "LINKED_TO": "跳转看板",
       "PARAM_TYPE": "交互类型",
       "PARAM_TYPE_SELECTOR": "选择器",
       "PARAM_TYPE_SLIDER": "滑动器",

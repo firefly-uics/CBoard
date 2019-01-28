@@ -474,6 +474,14 @@ cBoard.controller('dashboardViewCtrl', function ($timeout, $rootScope, $scope, $
         });
     };
 
+    $scope.link = function (widget) {
+        console.log('link', widget, widget.linkedto, widget.linkedto.length)
+        if (widget.linkedto != undefined || len(widget.linkedto) > 0){
+            var url=$state.href('dashboard.category.view',{id:widget.linkedto, category:'dashboard'});
+            window.open(url,'_self');
+        }
+    };
+
     $http.get("dashboard/getBoardParam.do?boardId=" + $stateParams.id).success(function (response) {
         if (response) {
             $scope.boardParams = JSON.parse(response.config);

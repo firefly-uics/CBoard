@@ -7,7 +7,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>CBoard | Starter</title>
+    <title>东为 | 数据可视化</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.6 -->
@@ -266,6 +266,9 @@ desired effect
                 <!--<i class="fa fa-bar-chart-o"></i>-->
                 <h3 class="box-title">{{widget.name}}</h3>
                 <div class="box-tools pull-right" ng-show="x" ng-init="x=false">
+                    <button type="button" class="btn btn-box-tool" ng-click="link(widget)"><i
+                            class="fa fa-link"></i>
+                    </button>
                     <button name="reload_{{widget.widget.id}}" type="button" class="btn btn-box-tool" ng-click="reload(widget)"><i
                             class="fa fa-refresh"></i>
                     </button>
@@ -294,6 +297,9 @@ desired effect
                 <!--<i class="fa fa-bar-chart-o"></i>-->
                 <h3 class="box-title">{{widget.name}}</h3>
                 <div class="box-tools pull-right" ng-show="x" ng-init="x=false">
+                    <button type="button" class="btn btn-box-tool" ng-click="link(widget)"><i
+                            class="fa fa-link"></i>
+                    </button>
                     <button type="button" class="btn btn-box-tool" ng-click="reload(widget)"><i
                             class="fa fa-refresh"></i>
                     </button>
